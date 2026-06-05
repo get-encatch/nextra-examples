@@ -1,0 +1,9 @@
+packages:
+  - 'apps/*'
+
+allowBuilds:
+  esbuild: true
+  sharp: true
+
+patchedDependencies:
+  nextra-theme-docs@4.6.1: patches/nextra-theme-docs@4.6.1.patch

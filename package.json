@@ -1,0 +1,8 @@
+{
+  "name": "encatch-nextra-examples",
+  "private": true,
+  "scripts": {
+    "dev:nextjs": "pnpm --filter nextjs dev",
+    "build:nextjs": "pnpm --filter nextjs build"
+  }
+}
