@@ -8,7 +8,7 @@ Sample Nextra docs site (Next.js) with Encatch page feedback in the footer.
 pnpm install
 ```
 
-In the app you want to run, copy `.env.example` → `.env` and set your Encatch publishable key and form slugs (see that app's README for variable names).
+In the app you want to run, copy `.env.example` → `.env` and set your Encatch publishable key and combined form slug / question slugs (see that app's README for variable names).
 
 **Publishable key:** [admin.encatch.com](https://admin.encatch.com) → **Settings** → **Publishable key**.
 
@@ -24,7 +24,7 @@ From the app folder: `pnpm dev`.
 
 The app uses the same pattern as [fumadocs-examples](../fumadocs-examples):
 
-1. **`.env`** — publishable key + form slugs (from `.env.example`).
+1. **`.env`** — publishable key + combined form slug and question slugs (from `.env.example`).
 2. **`lib/encatch.tsx`** — SDK init, env, and form helpers.
 3. **`components/docs-page-feedback.tsx`** — footer UI.
 4. Root layout — `<EncatchInit locale={...} />`.
