@@ -20,7 +20,7 @@ From this folder:
 pnpm dev
 ```
 
-Open http://localhost:3000/en (Spanish: http://localhost:3000/es). Docs: `/en/docs`, `/es/docs`.
+Open http://localhost:3000/en. Docs: `/en/docs`.
 
 ## Encatch — what to refer to
 

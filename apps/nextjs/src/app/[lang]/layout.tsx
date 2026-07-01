@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Footer, LastUpdated, Layout, LocaleSwitch, Navbar } from 'nextra-theme-docs';
+import { Footer, LastUpdated, Layout, Navbar } from 'nextra-theme-docs';
 import { Head, Search } from 'nextra/components';
 import { getPageMap } from 'nextra/page-map';
 import type { ReactNode } from 'react';
@@ -31,9 +31,7 @@ export default async function RootLayout({ children, params }: LayoutProps) {
     <Navbar
       logo={<b>{appName}</b>}
       projectLink={`https://github.com/${gitConfig.user}/${gitConfig.repo}`}
-    >
-      <LocaleSwitch lite />
-    </Navbar>
+    />
   );
 
   const footer = <Footer>{t.footer}</Footer>;
@@ -51,10 +49,6 @@ export default async function RootLayout({ children, params }: LayoutProps) {
           lastUpdated={<LastUpdated locale={lang}>Last updated on</LastUpdated>}
           sidebar={{ defaultMenuCollapseLevel: 1 }}
           pageMap={pageMap}
-          i18n={[
-            { locale: 'en', name: 'English' },
-            { locale: 'es', name: 'Español' },
-          ]}
           search={<Search placeholder={t.searchPlaceholder} />}
         >
           {children}

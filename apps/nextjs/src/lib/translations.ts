@@ -1,6 +1,6 @@
-export type Locale = 'en' | 'es';
+export type Locale = 'en';
 
-export const locales: Locale[] = ['en', 'es'];
+export const locales: Locale[] = ['en'];
 
 export const docsFeedbackTranslations = {
   en: {
@@ -9,13 +9,6 @@ export const docsFeedbackTranslations = {
     no: 'No',
     suggestEdits: 'Suggest edits',
     raiseIssue: 'Raise issue',
-  },
-  es: {
-    helpfulQuestion: '¿Te resultó útil esta página?',
-    yes: 'Sí',
-    no: 'No',
-    suggestEdits: 'Sugerir ediciones',
-    raiseIssue: 'Reportar un problema',
   },
 } as const;
 
@@ -26,13 +19,6 @@ export const layoutTranslations = {
       'Sample docs site with Encatch page feedback in the footer — built on Nextra.',
     footer: `MIT ${new Date().getFullYear()} © Encatch.`,
     searchPlaceholder: 'Search documentation…',
-  },
-  es: {
-    homeTitle: 'Encatch × Nextra',
-    homeDescription:
-      'Sitio de documentación de ejemplo con comentarios Encatch en el pie de página — construido con Nextra.',
-    footer: `MIT ${new Date().getFullYear()} © Encatch.`,
-    searchPlaceholder: 'Buscar documentación…',
   },
 } as const;
 

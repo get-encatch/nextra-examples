@@ -30,7 +30,7 @@ pnpm install
 
 | App | Command | Docs |
 |-----|---------|------|
-| Next.js | `pnpm dev:nextjs` | http://localhost:3000/en (docs: `/en/docs`) |
+| Next.js | `pnpm dev:nextjs` | http://localhost:3000/en/docs |
 
 From the app folder: `pnpm dev`.
 
