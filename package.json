@@ -3,6 +3,11 @@
   "private": true,
   "scripts": {
     "dev:nextjs": "pnpm --filter nextjs dev",
-    "build:nextjs": "pnpm --filter nextjs build"
+    "build:nextjs": "pnpm --filter nextjs build",
+    "test:visual": "playwright test",
+    "test:visual:ui": "playwright test --ui"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.51.0"
   }
 }

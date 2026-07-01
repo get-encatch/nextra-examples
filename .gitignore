@@ -9,3 +9,7 @@ node_modules
 .next
 _pagefind
 public/_pagefind
+
+test-results/
+playwright-report/
+screenshots/
